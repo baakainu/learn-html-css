@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습장 | Likelion Bootcamp</title>
+    <style>
+      .html-css {
+        width: 200px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid currentColor;
+        border-spacing: 1;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>연습장</h1>
+    <p>이곳은 HTML/CSS 연습장입니다.</p>
+    <br />
+    <hr />
+    <h2>GPT의 예제</h2>
+    <h3>
+      1. 기본 성적표
+      <table>
+        <tr>
+          <th rowspan="2" id="name">이름</th>
+          <th colspan="2">과목 점수</th>
+        </tr>
+        <tr>
+          <th id="math">수학</th>
+          <th id="english">영어</th>
+        </tr>
+        <tr>
+          <td headers="name">철수</td>
+          <td headers="math">85</td>
+          <td headers="english">90</td>
+        </tr>
+        <tr>
+          <td headers="name">영희</td>
+          <td headers="math">95</td>
+          <td headers="english">88</td>
+        </tr>
+      </table>
+    </h3>
+    <h3>
+      2. 가계부
+      <table>
+        <thead>
+          <tr>
+            <th id="date">날짜</th>
+            <th id="product-name">상품명</th>
+            <th id="price">가격</th>
+            <th id="purpose">구매목적</th>
+            <th id="where-to-buy">구매처</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="date">20.12.24</td>
+            <td headers="product-name">딸기</td>
+            <td headers="price">9900</td>
+            <td headers="purpose">식비</td>
+            <td headers="where-to-buy">롯데마트</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.24</td>
+            <td headers="product-name">월계수잎</td>
+            <td headers="price">4000</td>
+            <td headers="purpose">식비</td>
+            <td headers="where-to-buy">롯데마트</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.24</td>
+            <td headers="product-name">수제맥주</td>
+            <td headers="price">8900</td>
+            <td headers="purpose">외식</td>
+            <td headers="where-to-buy">미스터리 브루잉</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.24</td>
+            <td headers="product-name">빵</td>
+            <td headers="price">27300</td>
+            <td headers="purpose">외식</td>
+            <td headers="where-to-buy">현백 빵집</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.21</td>
+            <td headers="product-name">뉴스레터 이벤트</td>
+            <td headers="price">1000</td>
+            <td headers="purpose">취미</td>
+            <td headers="where-to-buy">앱 결제</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.21</td>
+            <td headers="product-name">뉴스레터 이벤트</td>
+            <td headers="price">39200</td>
+            <td headers="purpose">취미</td>
+            <td headers="where-to-buy">앱 결제</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.25</td>
+            <td headers="product-name">시계줄</td>
+            <td headers="price">23000</td>
+            <td headers="purpose">취미</td>
+            <td headers="where-to-buy">정형외과</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.27</td>
+            <td headers="product-name">진료비</td>
+            <td headers="price">36700</td>
+            <td headers="purpose">의료</td>
+            <td headers="where-to-buy">정형외과</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.27</td>
+            <td headers="product-name">소화제</td>
+            <td headers="price">12000</td>
+            <td headers="purpose">의료</td>
+            <td headers="where-to-buy">약국</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.27</td>
+            <td headers="product-name">떡꼬치</td>
+            <td headers="price">4500</td>
+            <td headers="purpose">외식</td>
+            <td headers="where-to-buy">집 앞 포장마차</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.28</td>
+            <td headers="product-name">노트, 펜, 편지지</td>
+            <td headers="price">9000</td>
+            <td headers="purpose">소모품</td>
+            <td headers="where-to-buy">알파 문방구</td>
+          </tr>
+          <tr>
+            <td headers="date">20.12.28</td>
+            <td headers="product-name">초코콘, 믹스컵</td>
+            <td headers="price">3300</td>
+            <td headers="purpose">외식</td>
+            <td headers="where-to-buy">미니스톱</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>12월</td>
+            <td>총합계</td>
+            <td colspan="3">178800</td>
+          </tr>
+        </tfoot>
+      </table>
+    </h3>
+  </body>
+</html>
