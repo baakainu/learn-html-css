@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 (input) 요소 | Likelion Bootcamp</title>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>폼 (input) 요소</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>필수 입력</legend>
+        <!-- 명시적 방법 : 인풋에 id 설정 후 레이블에 알려줌 -->
+        <div>
+          <label for="userName">이름</label>
+          <input type="text" id="userName" />
+        </div>
+        <!-- 암묵적 방법 : 레이블 아래에 자식으로 묶음 -->
+        <div>
+          <label for="">
+            비밀번호
+            <input type="text" />
+          </label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
