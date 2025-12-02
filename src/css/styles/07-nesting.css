@@ -1,0 +1,22 @@
+/* CSS 중첩 */
+.frontend {
+  font-size: 10px;
+  padding: 20px;
+  border: 5px solid green;
+  /* &를 붙이면 나를 포함한 상위 */
+  &:hover {
+    background-color: #fcf;
+  }
+  /* &가 없으면 단독으로 */
+  :hover {
+    background-color: #cfc;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+/* .frontend:hover {
+  background-color: #ffc;
+} */
