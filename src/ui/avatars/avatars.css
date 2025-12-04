@@ -3,3 +3,25 @@
   --avatar-size: 64px;
   --state-size: 20px;
 }
+/* 아바타 레이아웃 */
+.avatar-list {
+  list-style: none;
+  margin: 0;
+  width: 596px;
+  height: 395px;
+  padding: 110px 130px;
+  box-shadow: 0 0 4px 1px currentColor;
+
+  .avatar-item {
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 0 0px 1px currentColor;
+    float: left;
+    margin: 20px;
+
+    &:nth-child(5) {
+      background: yellow;
+      clear: left;
+    }
+  }
+}
