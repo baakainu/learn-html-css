@@ -1,4 +1,7 @@
 /* 기본 스타일 */
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
 /* CSS 예제 본문 스타일 */
 .css {
   margin: 35px;
