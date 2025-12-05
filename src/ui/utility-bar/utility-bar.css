@@ -1,0 +1,62 @@
+/* 유틸리티 바 */
+/* .utility-bar {
+  background: #ffc;
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+
+  li {
+    float: left;
+    margin-block-end: 8px;
+    margin-block-start: 8px;
+    margin-inline-end: 8px;
+  }
+  span {
+    background: pink;
+    margin-inline-end: 8px;
+  }
+} */
+.utility-bar {
+  --spacing: 8px;
+
+  background: yellow;
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+  width: 310px;
+
+  li {
+    float: inline-start;
+    display: flow-root;
+
+    span,
+    a {
+      float: inline-start;
+      padding: calc(var(--spacing) / 2);
+    }
+  }
+}
+
+.utility-bar-before {
+  --spacing: 8px;
+
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+
+  li {
+    float: inline-start;
+  }
+
+  li:nth-child(n + 2)::before {
+    content: '|';
+  }
+
+  li:nth-child(n + 2)::before,
+  a {
+    float: inline-start;
+    padding: calc(var(--spacing) / 2);
+  }
+}
