@@ -1,6 +1,80 @@
 /* 알림 UI */
 /* 컴포넌트 */
+/* flex를 활용한 레이아웃 */
+.notification {
+  --green: #22be61;
+  --gray: #929b90;
+  --white: #fff;
+  --brown: #e3a368;
+  --black: #121212;
+  --silver: #f9fefe;
+  --pink: #ffc0cb;
+
+  --point-color: var(--green);
+  --text-color: var(--gray);
+  --svg-path-color: var(--white);
+  --border-color: var(-silver);
+  --spacing: 1.25rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--white);
+  box-shadow: 0 0 2px 0 rgba(114, 119, 124, 0.9);
+
+  padding: var(--spacing);
+  column-gap: var(--spacing);
+  color: var(--point-color);
+  display: flex;
+  flex-flow: nowrap row;
+
+  div {
+    flex: 1 1 0;
+  }
+
+  strong {
+    font-size: 1.125rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  p {
+    color: var(--gray);
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  time {
+    width: 32px;
+    /* color: #22be61; */
+    font-size: 0.6875rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}
+
+/* 미디어 쿼리를 활용한 반응형 레이아웃 */
 .notifications {
+  box-shadow: 0 0 0 10px red;
+  background: var(--yellow);
+  display: flex;
+  flex-flow: wrap row;
+  gap: 20px;
+
+  @media (width >= 400px) {
+    background: var(--pink);
+  }
+
+  .notification {
+    width: 100%;
+
+    @media (width >= 400px) {
+      flex: 1 1 0;
+    }
+  }
+}
+
+/* float를 활용한 레이아웃 */
+/* .notifications {
   background: var(--yellow);
   padding: 20px;
   display: flow-root;
@@ -38,4 +112,4 @@
     font-weight: 700;
     text-align: right;
   }
-}
+} */
