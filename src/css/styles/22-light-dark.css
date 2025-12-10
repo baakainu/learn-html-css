@@ -1,0 +1,10 @@
+/* 라이트/다크 모드 스타일 */
+body {
+  background: yellow;
+  color: green;
+
+  @media (prefers-color-scheme: dark) {
+    background: purple;
+    color: white;
+  }
+}
