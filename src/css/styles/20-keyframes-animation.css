@@ -5,7 +5,7 @@
   grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
   grid-auto-rows: 18.75rem;
   gap: 1.25rem;
-  color: #fff;
+  color: #000;
 
   hr {
     display: none;
@@ -54,18 +54,110 @@
   }
 }
 
-/* fade 애니메이션 */
-.fade {
-  background: yellow;
+/* spin 애니메이션 */
+.spin {
+  .target-animation {
+    width: 120px;
+    aspect-ratio: 1;
+    background: conic-gradient(red 0% 25%, green 25% 50%, blue 50% 75%, purple 75% 100%);
+    border-radius: 50%;
+    animation: spin 500ms infinite linear;
+    animation-play-state: paused;
+  }
+}
+
+/* wobble 애니메이션 */
+.wobble {
+  .target-animation {
+    animation: wobble 0.2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+  }
+}
+
+/* pulse 애니메이션 */
+.pulse {
+  .target-animation {
+    animation: pulse 0.6 s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+  }
+}
+
+/* flip 애니메이션 */
+.flip {
+  perspective: 350px;
 
   .target-animation {
-    animation-name: fade;
+    animation: flip 1s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    /* transform-origin: 0 0; */
+  }
+}
+
+/* shake 애니메이션 */
+.shake {
+  .target-animation {
+    animation: shake 0.2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    transform-origin: 0 0;
+  }
+}
+
+/* bounce 애니메이션 */
+.bounce {
+  .target-animation {
+    animation: bounce 0.1s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    transform-origin: 0 0;
+  }
+}
+
+/* shrink 애니메이션 */
+.shrink {
+  .target-animation {
+    animation: shrink 2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    transform-origin: 0 0;
+  }
+}
+
+/* fade 애니메이션 */
+.fade {
+  .target-animation {
+    /* animation-name: fade;
     animation-duration: 2000ms;
-    animation-delay: 2000ms;
+    animation-delay: 300ms;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-play-state: paused;
-    animation-timing-function: esase-in-out;
-    /* animation-fill-mode: forwards; */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; */
+    animation: fade 2000ms 300ms alternate infinite ease-in-out forwards;
+    animation-play-state: paused;
+  }
+}
+
+/* border rotate 애니메이션 */
+.rotate {
+  .target-animation {
+    --angle: 0deg;
+
+    width: 120px;
+    height: 120px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: conic-gradient(from var(--angle), red 0 25%, transparent 25% 100%);
+      width: 110%;
+      height: 110%;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -1;
+      border-radius: inherit;
+      animation: angle 1s infinite ease-in-out;
+      animation-play-state: paused;
+    }
   }
 }
